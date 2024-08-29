@@ -72,17 +72,14 @@ delta = (B ** 2) - (4 * A * C)
 raiz = delta ** (1/2)
 x1 = ((-1 * B) + raiz) / (2 * A)     
 x2 = ((-1 * B) + (-1 * raiz)) / (2 * A)
-print(f"Primeira raiz = {x1}")
-print(f"Segunda raiz = {x2}")
 
 if delta > 0:
     print("Apresenta duas raízes") 
-    print(f"Primeira raiz = {x1}")
-    print(f"Segunda raiz = {x2}")
+    print("Primeira raiz = {:n}".format(x1))
+    print("Segunda raiz = {:n}".format(x2))
 elif delta == 0:
     print("Apresenta uma raíz")
-    print(f"Primeira raiz = {x1}")
-    print(f"Segunda raiz = {x2}")
+    print("Única raiz = {:n}".format(x1))
 else: 
     print("Não apresenta raízes reais")
 
