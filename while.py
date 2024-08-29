@@ -11,18 +11,38 @@ while Cont <= 10:
     print(Cont)
     Cont = Cont + 1
 """
-# Cont = 1
-# while Cont <= 10:
-#     print(Cont)
-#     Cont = Cont + 1
+# Cont = 1             # inicialização
+# while Cont <= 10:    # condição
+#     print(Cont)      # corpo
+#     Cont = Cont + 1  # iteração
 
 
-A = int(input("Digite um número para A: "))
-B = int(input("Digite um número para B: "))
-C = int(input("Digite um número para C: "))
-delta = (B ** 2) - (4 * A * C)
-raiz = delta ** (1/2)
-x1 = ((-1 * B) + raiz) / (2 * A)     
-x2 = ((-1 * B) + (-1 * raiz)) / (2 * A)
-print(f"Primeira raiz = {x1}")
-print(f"Segunda raiz = {x2}")
+# Exercício 1
+# N = int(input("Digite a quantidade de números: "))
+# P = int(input("Digite o primeiro termo: "))
+# R = int(input("Digite o segundo termo: "))
+
+# soma = 0
+# cont = 0
+# while cont < N:
+#     print(f"O {cont + 1}º termo da PG é {P}")
+#     P = P * R
+#     soma += P
+#     cont = cont + 1
+# print("Soma dos termos =",soma)
+
+
+# Exercício 2
+# pos = 0
+# neg = 0
+# X = 1
+# while X != 0:
+#     X = int(input("Digite valor de X: "))
+#     if X != 0:
+#         if X > 0:
+#             pos = pos + X
+#         else:
+#             neg = neg + X
+# print(f"Total de números positivos = {pos}")
+# print(f"Total de números negativos = {neg}")
+
