@@ -1,4 +1,3 @@
-
 """
     O comando while serve para a necessidade de repetir um certo trecho no código, categoria de loop.
 
@@ -18,11 +17,11 @@ while Cont <= 10:
 
 
 # Exercício 1
-# N = int(input("Digite a quantidade de números: "))
-# P = int(input("Digite o primeiro termo: "))
-# R = int(input("Digite o segundo termo: "))
+N = int(input("Digite a quantidade de números: "))
+P = int(input("Digite o primeiro termo: "))
+R = int(input("Digite o segundo termo: "))
 
-# soma = 0
+soma = 0
 # cont = 0
 # while cont < N:
 #     print(f"O {cont + 1}º termo da PG é {P}")
@@ -33,16 +32,38 @@ while Cont <= 10:
 
 
 # Exercício 2
-# pos = 0
-# neg = 0
-# X = 1
-# while X != 0:
-#     X = int(input("Digite valor de X: "))
-#     if X != 0:
-#         if X > 0:
-#             pos = pos + X
-#         else:
-#             neg = neg + X
-# print(f"Total de números positivos = {pos}")
-# print(f"Total de números negativos = {neg}")
+pos = 0
+neg = 0
+X = 1
+while X != 0:
+    X = int(input("Digite valor de X: "))
+    if X != 0:
+        if X > 0:
+            pos = pos + X
+        else:
+            neg = neg + X
+print(f"Total de números positivos = {pos}")
+print(f"Total de números negativos = {neg}")
 
+#Exercício 3 
+num = int(input("Digite um número inteiro: "))
+soma = num
+termo = 1
+while num != 0:
+    termo = termo + 1
+    num = float(input(f"Digite {termo}º número real: "))
+    soma += num
+print("Soma dos números = {:n}".format(soma))
+
+#Exercício 4
+num = int(input("Digite um número inteiro: "))
+soma = num
+termo = 1
+while num != 0:
+    termo = termo + 1
+    num = float(input(f"Digite {termo}º número real: "))
+    if num > 0:
+        soma += num
+    else: 
+        soma = soma
+print("Soma dos números = {:n}".format(soma))
